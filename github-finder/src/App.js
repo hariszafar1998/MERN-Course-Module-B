@@ -1,13 +1,14 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import Navbar from './components/layouts/navbar';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <h1>Hello World!</h1>
-        <h2>hi</h2>
-      </Fragment>
+      <div>
+        <Navbar />
+        {/* <h1>Hello World!</h1> */}
+      </div>
     );
   }
 };
