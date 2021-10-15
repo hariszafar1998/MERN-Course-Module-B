@@ -72,3 +72,12 @@ li {
   transition: background-color 0.5s ease;
   transition: color 0.5s ease;
 }
+.gridstyle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.container {
+  padding: 20px;
+}
