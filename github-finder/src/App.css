@@ -37,3 +37,38 @@ li {
   font-size: 120%;
   margin: 10px;
 }
+
+.card {
+  padding: 20px;
+  border: 0.5px solid lightgray;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gh-profile-image {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.gh-profile-opening-btn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.gh-profile-opening-btn:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
