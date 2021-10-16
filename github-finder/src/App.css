@@ -81,3 +81,9 @@ li {
 .container {
   padding: 20px;
 }
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
