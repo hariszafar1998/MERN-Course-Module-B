@@ -6,7 +6,7 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
             <div className="card">
                 <img src={avatar_url} alt="Profile" className="gh-profile-image"/>
                 <h3>{login}</h3>
-                <a className="gh-profile-opening-btn" href={html_url}>Profile</a>
+                <a className="gh-profile-opening-btn" href={html_url} target="_blank" rel="noreferrer">Profile</a>
             </div>
         )
 };

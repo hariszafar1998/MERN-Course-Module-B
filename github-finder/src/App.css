@@ -87,3 +87,35 @@ li {
   align-items: center;
   justify-content: center;
 }
+
+.form-control {
+  padding: 40px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  font-size: 120%;
+  margin-bottom: 20px;
+}
+
+.form-control input:focus {
+  outline: 0;
+}
+
+.form-submit-btn {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.clear-btn {
+  margin-top: 0px;
+  width: 1520px;
+  padding: 10px;
+  font-size: 120%;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  cursor: pointer;
+}
