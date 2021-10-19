@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-
 class Search extends Component {
     state = {
         text: ''
@@ -10,7 +9,8 @@ class Search extends Component {
     static propTypes = {
         searchUsers: PropTypes.func.isRequired,
         eraseData: PropTypes.func.isRequired,
-        showClear: PropTypes.bool.isRequired
+        showClear: PropTypes.bool.isRequired,
+        setAlert: PropTypes.func.isRequired,
     }
 
     searchQueryHandler = (e) => {
@@ -19,8 +19,12 @@ class Search extends Component {
 
     onSubmissionOfForm = (e) => {
         e.preventDefault();
-        this.props.searchUsers(this.state.text);
-        this.setState({ text: '' })
+        if ( this.state.text === '' ) {
+            this.props.setAlert('Please enter a keyword.')
+        } else {
+            this.props.searchUsers(this.state.text);
+            this.setState({ text: '' })
+        }
     };
 
     render() {
