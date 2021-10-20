@@ -29,16 +29,17 @@ class App extends Component {
     setTimeout(() => this.setState( {alert: null} ), 5000);
   };
 
-  // closeNotificationBtn = () => {
-  //   console.log('abc');
-  // };
+  removedNotification = () => {
+    this.setState({alert: null});
+  };
 
   render() {
     const { users, loading } = this.state;
     return (
       <div>
         <Navbar title='GitHub Finder' />
-          <Alert alert={this.state.alert} closeBtn={this.state.alert}/>
+        <Alert alert={this.state.alert}
+        removedNotification={this.removedNotification}/>
         <Search searchUsers={this.searchUsers} 
                 eraseData={this.eraseData} 
                 showClear={users.length > 0 ? true : false}
